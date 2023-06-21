@@ -1,10 +1,8 @@
 import React from 'react';
 
 
-const ChannelDetail = () => {
+const ChannelDetail = () => 
     (
         <div>channel</div>
     )
-}
-
 export default ChannelDetail;
