@@ -25,7 +25,6 @@ const SideBar = () => (
 
             </button>
         ))}
-      <div>sidebar</div>
     </Stack>
     )
 export default SideBar;
