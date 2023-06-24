@@ -10,7 +10,6 @@ const Feed = () =>{
   const [videos, setVideos] = useState([])
 
    useEffect(()=>{
-    setVideos(null)
     fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
     .then((data)=>setVideos(data.items))
    },[selectedCategory])
@@ -34,7 +33,7 @@ const Feed = () =>{
                 {selectedCategory} <span style={{color: '#F31503'}}>Videos</span>
                 </Typography>
             </Box>
-            <Videos videos={[videos]}/>
+            <Videos videos={videos} />
         </Stack>
     )}
 export default Feed;
