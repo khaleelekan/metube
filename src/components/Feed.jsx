@@ -28,12 +28,14 @@ const Feed = () =>{
                 copyright 2023
             </Typography>
             </Box>
+            <Stack sx={{ flexDirection:  'column'}}>
             <Box p={2}>
                 <Typography variant='h4' fontWeight='bold' mb={4} sx={{color: 'white'}}>
                 {selectedCategory} <span style={{color: '#F31503'}}>Videos</span>
                 </Typography>
             </Box>
             <Videos videos={videos} />
+            </Stack>
         </Stack>
     )}
 export default Feed;
