@@ -16,7 +16,7 @@ const ChannelDetail = () => {
         .then((data)=> setChannelDetail(data?.items[0]))
     
         fetchFromAPI(`search?channelId=${id}&part=snippet&order=date`)
-        .then((data)=> setVideos(data?.items[0]))
+        .then((data)=> setVideos(data?.items))
     },[id])
    return (
         <Box minHeight='95vh'>
@@ -34,6 +34,7 @@ const ChannelDetail = () => {
                     <Box sx={{
                         mr: {sm: '100px'}
                     }} />
+
                         <Videos videos={videos} />
                  </Box>
             </Box>
